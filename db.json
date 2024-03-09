@@ -1,0 +1,124 @@
+{
+    "produtos": [
+        {
+            "id": 1,
+            "nome": "Bolo de Chocolate",
+            "imagePath": "../../assets/1.png",
+            "preco": 7.90
+        },
+        {
+            "id": 2,
+            "nome": "Bolo de Cenoura",
+            "imagePath": "../../assets/2.png",
+            "preco": 7.90
+        },
+        {
+            "id": 3,
+            "nome": "Torta de Limão",
+            "imagePath": "../../assets/3.png",
+            "preco": 7.90
+        },
+        {
+            "id": 4,
+            "nome": "Torta de Morango",
+            "imagePath": "../../assets/4.png",
+            "preco": 7.90
+        },
+        {
+            "id": 5,
+            "nome": "Suco de Laranja",
+            "imagePath": "../../assets/5.png",
+            "preco": 14.90
+        },
+        {
+            "id": 6,
+            "nome": "Suco de Limão",
+            "imagePath": "../../assets/6.png",
+            "preco": 14.90
+        },
+        {
+            "id": 7,
+            "nome": "Suco de Morango",
+            "imagePath": "../../assets/7.png",
+            "preco": 14.90
+        },
+        {
+            "id": 8,
+            "nome": "Café Expresso",
+            "imagePath": "../../assets/8.png",
+            "preco": 8.00
+        },
+        {
+            "id": 9,
+            "nome": "Chocolate Quente",
+            "imagePath": "../../assets/9.png",
+            "preco": 10.00
+        },
+        {
+            "id": 10,
+            "nome": "Pão de Queijo",
+            "imagePath": "../../assets/10.png",
+            "preco": 12.00
+        },
+        {
+            "id": 11,
+            "nome": "Croissant",
+            "imagePath": "../../assets/11.png",
+            "preco": 8.90
+        },
+        {
+            "id": 12,
+            "nome": "Hamburguer",
+            "imagePath": "../../assets/12.png",
+            "preco": 18.90
+        },
+        {
+            "id": 13,
+            "nome": "Lanche Natural",
+            "imagePath": "../../assets/13.png",
+            "preco": 16.90
+        },
+        {
+            "id": 14,
+            "nome": "Batata Frita",
+            "imagePath": "../../assets/14.png",
+            "preco": 12.90
+        },
+        {
+            "id": 15,
+            "nome": "Salada Completa",
+            "imagePath": "../../assets/15.png",
+            "preco": 15.90
+        },
+        {
+            "id": 16,
+            "nome": "Prato Executivo",
+            "imagePath": "../../assets/16.png",
+            "preco": 22.90
+        },
+        {
+            "id": 17,
+            "nome": "Pizza de Mussarela",
+            "imagePath": "../../assets/17.png",
+            "preco": 13.90
+        },
+        {
+            "id": 18,
+            "nome": "Pizza de Calabresa",
+            "imagePath": "../../assets/18.png",
+            "preco": 13.90
+        },
+        {
+            "id": 19,
+            "nome": "Torta de Frango",
+            "imagePath": "../../assets/19.png",
+            "preco": 12.00
+        },
+        {
+            "id": 20,
+            "nome": "Torta de Palmito",
+            "imagePath": "../../assets/20.png",
+            "preco": 12.00
+        }
+    ]
+}
