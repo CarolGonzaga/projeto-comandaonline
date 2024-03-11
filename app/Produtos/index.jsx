@@ -1,11 +1,26 @@
 import { MaterialIcons } from '@expo/vector-icons';
 import { ScrollView, Text, TouchableOpacity, View } from 'react-native';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 
 import Button from '../../components/Button/index.jsx';
 import CardProduto from '../../components/CardProduto/index.jsx';
 import { styles } from './style.js';
 
-export default function Produtos({navigation}) {
+export default function Produtos({ navigation }) {
+
+    const [produtos, setProdutos] = useState([])
+
+    useEffect(() => {
+        axios.get('http://localhost:3000/produtos')
+            .then(function (response) {
+                // manipula o sucesso da requisição
+                console.log(response);
+                setProdutos(response.data)
+            })
+    }, [])
+
+
     return (
         <View style={styles.containerBetween}>
             <View style={styles.header}>
@@ -38,12 +53,8 @@ export default function Produtos({navigation}) {
             <Text style={styles.subtitle}>Produtos</Text>
 
             <ScrollView style={styles.scroll}>
-                <CardProduto produto={produto1} />
-                <CardProduto produto={produto2} />
-                <CardProduto produto={produto3} />
-                <CardProduto produto={produto4} />
+                {produtos.map(produto => <CardProduto key={produto.id} produto={produto} />)}
             </ScrollView>
-
 
             <Button>Finalizar</Button>
         </View>
