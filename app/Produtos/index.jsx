@@ -1,15 +1,17 @@
 import { MaterialIcons } from '@expo/vector-icons';
 import { ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import axios from 'axios';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 
 import Button from '../../components/Button/index.jsx';
 import CardProduto from '../../components/CardProduto/index.jsx';
 import { styles } from './style.js';
+import { PedidoContext } from '../../context/PedidoContext.js';
 
 export default function Produtos({ navigation }) {
 
-    const [produtos, setProdutos] = useState([])
+    const [ produtos, setProdutos ] = useState([])
+    const { saldoComanda, total, saldoFinal, comanda } = useContext(PedidoContext)
 
     useEffect(() => {
         axios.get('http://localhost:3000/produtos')
@@ -20,6 +22,16 @@ export default function Produtos({ navigation }) {
             })
     }, [])
 
+    function CurrencyFormat({ value, currency }) {
+        // Formata o valor da moeda
+        const valorFormatado = new Intl.NumberFormat('pt-BR', {
+          style: 'currency',
+          currency: currency || 'BRL' // Se a moeda não for fornecida, assume BRL (Real brasileiro)
+        }).format(value);
+      
+        return valorFormatado;
+      }
+
 
     return (
         <View style={styles.containerBetween}>
@@ -29,8 +41,8 @@ export default function Produtos({ navigation }) {
                 </TouchableOpacity>
 
                 <View style={styles.box}>
-                    <Text>comanda</Text>
-                    <Text style={styles.title}>2457</Text>
+                    <Text>Comanda</Text>
+                    <Text style={styles.title}>{comanda.id}</Text>
                 </View>
             </View>
 
@@ -38,15 +50,15 @@ export default function Produtos({ navigation }) {
                 <Text style={styles.subtitle}>Pedido</Text>
                 <View style={styles.pedidoData}>
                     <Text>Saldo da comanda</Text>
-                    <Text>R$ 0,00</Text>
+                    <Text>{CurrencyFormat({ value: saldoComanda })}</Text>
                 </View>
                 <View style={styles.pedidoData}>
-                    <Text>Total do pedido</Text>
-                    <Text>R$ +20,00</Text>
+                    <Text>Último item adicionado</Text>
+                    <Text>{CurrencyFormat({ value: total })}</Text>
                 </View>
                 <View style={styles.pedidoDataTotal}>
                     <Text>Saldo final</Text>
-                    <Text>R$ 149,00</Text>
+                    <Text>{CurrencyFormat({ value: saldoFinal })}</Text>
                 </View>
             </View>
 

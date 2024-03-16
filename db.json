@@ -4,121 +4,135 @@
             "id": 1,
             "nome": "Bolo de Chocolate",
             "imagePath": "https://images2.imgbox.com/a2/27/aXw9ujbQ_o.jpeg",
-            "preco": 7.90
+            "preco": 7
         },
         {
             "id": 2,
             "nome": "Bolo de Cenoura",
             "imagePath": "https://images2.imgbox.com/37/d2/b6J88UhU_o.jpeg",
-            "preco": 7.90
+            "preco": 7
         },
         {
             "id": 3,
             "nome": "Torta de Limão",
             "imagePath": "https://images2.imgbox.com/ae/09/LEiAlHcc_o.jpeg",
-            "preco": 7.90
+            "preco": 8
         },
         {
             "id": 4,
             "nome": "Torta de Morango",
             "imagePath": "https://images2.imgbox.com/52/e9/SbggPQpO_o.jpeg",
-            "preco": 7.90
+            "preco": 8
         },
         {
             "id": 5,
             "nome": "Suco de Laranja",
             "imagePath": "https://images2.imgbox.com/77/8a/d0iRsHCP_o.jpeg",
-            "preco": 14.90
+            "preco": 14
         },
         {
             "id": 6,
             "nome": "Suco de Limão",
             "imagePath": "https://images2.imgbox.com/41/fa/dUnjHWAy_o.jpeg",
-            "preco": 14.90
+            "preco": 14
         },
         {
             "id": 7,
             "nome": "Suco de Morango",
             "imagePath": "https://images2.imgbox.com/95/b7/0BYPx5ZU_o.jpeg",
-            "preco": 14.90
+            "preco": 14
         },
         {
             "id": 8,
             "nome": "Café Expresso",
             "imagePath": "https://images2.imgbox.com/e0/e2/A20diQlo_o.jpeg",
-            "preco": 8.00
+            "preco": 8
         },
         {
             "id": 9,
             "nome": "Chocolate Quente",
             "imagePath": "https://images2.imgbox.com/0c/b2/vfjgLXTj_o.jpeg",
-            "preco": 10.00
+            "preco": 10
         },
         {
             "id": 10,
             "nome": "Pão de Queijo",
             "imagePath": "https://images2.imgbox.com/67/f0/lj5txlJ3_o.jpeg",
-            "preco": 12.00
+            "preco": 12
         },
         {
             "id": 11,
             "nome": "Croissant",
             "imagePath": "https://images2.imgbox.com/a2/8d/Ir6iltYB_o.jpeg",
-            "preco": 8.90
+            "preco": 8
         },
         {
             "id": 12,
             "nome": "Hamburguer",
             "imagePath": "https://images2.imgbox.com/bd/0b/BqdqpF1B_o.jpeg",
-            "preco": 18.90
+            "preco": 18
         },
         {
             "id": 13,
             "nome": "Lanche Natural",
             "imagePath": "https://images2.imgbox.com/a3/75/IsJImeUy_o.jpeg",
-            "preco": 16.90
+            "preco": 16
         },
         {
             "id": 14,
             "nome": "Batata Frita",
             "imagePath": "https://images2.imgbox.com/af/f1/nBfyS0aj_o.jpeg",
-            "preco": 12.90
+            "preco": 12
         },
         {
             "id": 15,
             "nome": "Salada Completa",
             "imagePath": "https://images2.imgbox.com/c8/6e/egzNRXnI_o.jpeg",
-            "preco": 15.90
+            "preco": 17
         },
         {
             "id": 16,
             "nome": "Prato Executivo",
             "imagePath": "https://images2.imgbox.com/b9/4c/NtKYSZrd_o.jpeg",
-            "preco": 22.90
+            "preco": 22
         },
         {
             "id": 17,
             "nome": "Pizza de Mussarela",
             "imagePath": "https://images2.imgbox.com/33/bf/aM66Wj6X_o.jpeg",
-            "preco": 13.90
+            "preco": 13
         },
         {
             "id": 18,
             "nome": "Pizza de Calabresa",
             "imagePath": "https://images2.imgbox.com/f2/0d/ogH4EyX2_o.jpeg",
-            "preco": 13.90
+            "preco": 13
         },
         {
             "id": 19,
             "nome": "Torta de Frango",
             "imagePath": "https://images2.imgbox.com/df/09/9x2c9Ndw_o.jpeg",
-            "preco": 12.00
+            "preco": 15
         },
         {
             "id": 20,
             "nome": "Torta de Palmito",
             "imagePath": "https://images2.imgbox.com/9f/8f/NYvyGOe0_o.jpeg",
-            "preco": 12.00
+            "preco": 15
+        }
+    ],
+    "comandas": [
+        {
+            "id": 1101,
+            "saldo": 30
+        },
+        {
+            "id": 1102,
+            "saldo": 15
+        },
+        {
+            "id": 1103,
+            "saldo": 0
         }
     ]
 }

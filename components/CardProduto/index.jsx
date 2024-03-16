@@ -1,7 +1,23 @@
 import { Image, Text, View, TouchableOpacity } from 'react-native';
 import { styles } from './style';
+import { useContext, useState } from 'react';
+import { PedidoContext } from '../../context/PedidoContext';
 
 export default function CardProduto({ produto }) {
+
+    const [ qtdade, setQtdade ] = useState(0)
+    const { addProduto, removeProduto } = useContext(PedidoContext)
+
+    const handlePlus = () => {
+        setQtdade(qtdade + 1)
+        addProduto(produto)
+    }
+
+    const handleMinus = () => {
+        if (qtdade === 0) return
+        setQtdade(qtdade - 1)
+        removeProduto(produto)
+    }
 
     return (
         <View style={styles.pedidos}>
@@ -16,11 +32,11 @@ export default function CardProduto({ produto }) {
                 </View>
 
                 <View style={styles.spinner}>
-                    <TouchableOpacity >
+                    <TouchableOpacity onPress={handleMinus}>
                         <Text style={styles.spinnerMinus}>-</Text>
                     </TouchableOpacity>
-                    <Text style={styles.spinnerValue}>1</Text>
-                    <TouchableOpacity >
+                    <Text style={styles.spinnerValue}>{qtdade}</Text>
+                    <TouchableOpacity onPress={handlePlus}>
                         <Text style={styles.spinnerPlus}>+</Text>
                     </TouchableOpacity>
                 </View>
