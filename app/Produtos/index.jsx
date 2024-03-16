@@ -11,7 +11,7 @@ import { PedidoContext } from '../../context/PedidoContext.js';
 export default function Produtos({ navigation }) {
 
     const [ produtos, setProdutos ] = useState([])
-    const { saldoComanda, total, saldoFinal, comanda } = useContext(PedidoContext)
+    const { saldoComanda, saldoFinal, comanda, total } = useContext(PedidoContext)
 
     useEffect(() => {
         axios.get('http://localhost:3000/produtos')
@@ -53,7 +53,7 @@ export default function Produtos({ navigation }) {
                     <Text>{CurrencyFormat({ value: saldoComanda })}</Text>
                 </View>
                 <View style={styles.pedidoData}>
-                    <Text>Último item adicionado</Text>
+                    <Text>Total do pedido</Text>
                     <Text>{CurrencyFormat({ value: total })}</Text>
                 </View>
                 <View style={styles.pedidoDataTotal}>
