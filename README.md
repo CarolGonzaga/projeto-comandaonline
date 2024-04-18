@@ -1,6 +1,6 @@
 # Projeto - Comanda 1.0
-- **12º Projeto Pessoal**
-- Comanda Online
+- Projeto 12 - Desenvolvimento Dispositivos Móveis
+- Aplicação Web Comanda Online
 
 <br/>
 
@@ -30,6 +30,3 @@ O aplicativo Comanda é uma solução para gerenciamento de pedidos em estabelec
 <br/>
   
 ## © Carol Gonzaga 🏳️‍🌈
-[![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/yZq4x7DQ)
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/anacquesta) 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/anacarolgonzaga) 
